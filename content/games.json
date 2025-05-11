@@ -1,0 +1,184 @@
+{
+  "games": [
+    {
+      "slug": "merge-fellas",
+      "title": "Merge Fellas",
+      "description": "Experience Merge Fellas, an addictive merging game where you combine identical characters to create more powerful ones. Discover the unique merging mechanics of Merge Fellas and enjoy endless fun!",
+      "icon": "/images/hot_game/merge-fellas.jpg",
+      "url": "https://merge-fellas.com/game",
+      "previewImage": "/images/hot_game/merge-fellas.jpg",
+      "type": "puzzle"
+    },
+    {
+      "slug": "brainrotclicker",
+      "title": "Brainrot Clicker",
+      "description": "Experience Brainrot Clicker, a mind-bending clicker game that challenges your reflexes and strategic thinking. With its addictive gameplay mechanics and deep progression system, it's perfect for both casual and hardcore players!",
+      "icon": "/images/hot_game/brainrotclicker.jpg",
+      "url": "https://brainrotclicker.io/italian-brainrot-clicker.embed",
+      "previewImage": "/images/hot_game/brainrotclicker.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "cheese-chompers-3d",
+      "title": "Cheese Chompers 3D",
+      "description": "A thrilling 3D maze adventure where you guide a cute mouse through challenging cheese mazes, collecting power-ups and avoiding obstacles.",
+      "icon": "/images/hot_game/Cheese Chompers 3D.jpg",
+      "url": "https://rawcdn.githack.com/gn-math/assets/main/165/index.html",
+      "previewImage": "/images/hot_game/Cheese Chompers 3D.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "crazy-chicken-3d",
+      "title": "Crazy Chicken 3D",
+      "description": "An exciting 3D adventure game featuring crazy chickens in a dynamic world full of challenges and fun.",
+      "icon": "/images/hot_game/Crazy Chicken 3D.jpg",
+      "url": "https://html-classic.itch.zone/html/13448030/crazychicken%20web%20port/index.html",
+      "previewImage": "/images/hot_game/Crazy Chicken 3D.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "crazy-kitty-3d",
+      "title": "Crazy Kitty 3D",
+      "description": "A delightful 3D game where you control mischievous kitties through various adventures and challenges.",
+      "icon": "/images/hot_game/Crazy Kitty 3D.jpg",
+      "url": "https://html-classic.itch.zone/html/13447164/Website/index.html",
+      "previewImage": "/images/hot_game/Crazy Kitty 3D.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "party-animals",
+      "title": "Party Animals",
+      "description": "A hilarious multiplayer party game where cute animals battle it out in various game modes.",
+      "icon": "/images/hot_game/data image game party-animals.jpg.png",
+      "url": "https://chillguyclicker.io/animal-rampage-3d.embed",
+      "previewImage": "/images/hot_game/data image game party-animals.jpg.png",
+      "type": "party"
+    },
+    {
+      "slug": "totally-accurate-battle-simulator",
+      "title": "Totally Accurate Battle Simulator",
+      "description": "A physics-based battle simulator where you create epic battles with wacky warriors.",
+      "icon": "/images/hot_game/data image game totally-accurate-battle-simulator.jpg.png",
+      "url": "https://crazycattle-3d.io/totally-accurate-battle-simulator.embed",
+      "previewImage": "/images/hot_game/data image game totally-accurate-battle-simulator.jpg.png",
+      "type": "simulation"
+    },
+    {
+      "slug": "super-auto-pets",
+      "title": "Super Auto Pets",
+      "description": "An auto-battler game featuring adorable pets with unique abilities and strategies.",
+      "icon": "/images/hot_game/data image game super-auto-pets.jpg.png",
+      "url": "https://www.crazygames.com/embed/super-auto-pets",
+      "previewImage": "/images/hot_game/data image game super-auto-pets.jpg.png",
+      "type": "strategy"
+    },
+    {
+      "slug": "stumble-guys",
+      "title": "Stumble Guys",
+      "description": "A multiplayer knockout game where you race through obstacles and challenges.",
+      "icon": "/images/hot_game/data image game stumble-guys-game.jpg.png",
+      "url": "https://crazycattle-3d.io/stumble-guys.embed",
+      "previewImage": "/images/hot_game/data image game stumble-guys-game.jpg.png",
+      "type": "party"
+    },
+    {
+      "slug": "build-royale",
+      "title": "Build Royale",
+      "description": "A building and battle royale game where you construct and fight your way to victory.",
+      "icon": "/images/hot_game/data image game build-royale.jpg.png",
+      "url": "https://www.crazygames.com/embed/buildroyale-io",
+      "previewImage": "/images/hot_game/data image game build-royale.jpg.png",
+      "type": "battle"
+    },
+    {
+      "slug": "smash-karts",
+      "title": "Smash Karts",
+      "description": "A fun multiplayer kart racing game with combat elements and power-ups.",
+      "icon": "/images/hot_game/data image game smash-karts-game.jpg.png",
+      "url": "https://crazycattle-3d.io/smash-karts.embed",
+      "previewImage": "/images/hot_game/data image game smash-karts-game.jpg.png",
+      "type": "racing"
+    },
+    {
+      "slug": "animal-rampage-3d",
+      "title": "Animal Rampage 3D",
+      "description": "A chaotic 3D game where animals cause mayhem and destruction in an open world.",
+      "icon": "/images/hot_game/data image game animal-rampage-3d.jpg.png",
+      "url": "https://chillguyclicker.io/animal-rampage-3d.embed",
+      "previewImage": "/images/hot_game/data image game animal-rampage-3d.jpg.png",
+      "type": "action"
+    },
+    {
+      "slug": "fall-guys",
+      "title": "Fall Guys",
+      "description": "A massively multiplayer party game with silly obstacles and competitive fun.",
+      "icon": "/images/hot_game/Fall Guys.jpg",
+      "url": "https://www.crazygames.com/embed/ball-guys",
+      "previewImage": "/images/hot_game/Fall Guys.jpg",
+      "type": "party"
+    },
+    {
+      "slug": "crazy-sheep-3d",
+      "title": "Crazy Sheep 3D",
+      "description": "A wild 3D adventure where you control sheep through various challenges and obstacles.",
+      "icon": "/images/hot_game/Crazy Sheep 3D.jpg",
+      "url": "https://play.gamepix.com/crazy-sheep/embed?sid=e4515",
+      "previewImage": "/images/hot_game/Crazy Sheep 3D.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "crazy-cattle-3d-plus",
+      "title": "Crazy Cattle 3D+",
+      "description": "An enhanced version of Crazy Cattle 3D with new features and improved gameplay.",
+      "icon": "/images/hot_game/Crazy Cattle 3D+.jpg",
+      "url": "https://crazycattle-3d.io/crazy-cattle-3d-.embed",
+      "previewImage": "/images/hot_game/Crazy Cattle 3D+.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "crazy-cattle-3d-web",
+      "title": "Crazy Cattle 3D Web Port",
+      "description": "The web-optimized version of Crazy Cattle 3D for seamless browser gameplay.",
+      "icon": "/images/hot_game/Crazy Cattle 3D Web Port.jpg",
+      "url": "https://html-classic.itch.zone/html/13447164/Website/index.html",
+      "previewImage": "/images/hot_game/Crazy Cattle 3D Web Port.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "crazy-cattle-3d-deluxe",
+      "title": "Crazy Cattle 3D Deluxe",
+      "description": "A premium version of Crazy Cattle 3D with exclusive content and features.",
+      "icon": "/images/hot_game/crazy-cattle-3d-deluxe.jpg",
+      "url": "https://crazycattle-3d.io/crazy-cattle-3d-deluxe.embed",
+      "previewImage": "/images/hot_game/crazy-cattle-3d-deluxe.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "crazy-sprunki-3d",
+      "title": "Crazy Sprunki 3D",
+      "description": "An exciting 3D adventure featuring the lovable Sprunki character in a world of challenges.",
+      "icon": "/images/hot_game/Crazy Sprunki 3D.jpg",
+      "url": "https://crazycattle-3d.io/crazy-sprunki-3d.embed",
+      "previewImage": "/images/hot_game/Crazy Sprunki 3D.jpg",
+      "type": "action"
+    },
+    {
+      "slug": "sprunki-spruted-remastered",
+      "title": "Sprunki Spruted Remastered",
+      "description": "A remastered version of the classic game with enhanced graphics and gameplay.",
+      "icon": "/images/new_mods/Sprunki Spruted Remastered.png",
+      "url": "https://wowtbc.net/sprunkin/spruted-remastered/index.html",
+      "previewImage": "/images/new_mods/Sprunki Spruted Remastered.png",
+      "type": "action"
+    },
+    {
+      "slug": "sprunki-skibidi-toilet-remake",
+      "title": "Sprunki Skibidi Toilet Remake 4.5",
+      "description": "An entertaining remake with unique gameplay mechanics and challenges.",
+      "icon": "/images/new_mods/Sprunki Skibidi Toilet Remake 4.5.png",
+      "url": "https://wowtbc.net/sprunkin/skibidi-toilet4.5/index.html",
+      "previewImage": "/images/new_mods/Sprunki Skibidi Toilet Remake 4.5.png",
+      "type": "action"
+    }
+  ]
+} 
