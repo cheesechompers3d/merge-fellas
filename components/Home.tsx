@@ -64,7 +64,7 @@ export default function Home({ defaultGame }: HomeProps) {
                   {/* Title Section */}
                   <div className="text-center mb-8">
                     <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">{selectedGame.title}</h1>
-                    <p className="text-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text font-medium max-w-3xl mx-auto px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                    <p className="text-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text font-medium max-w-8xl mx-auto px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
                       {selectedGame.description}
                     </p>
                   </div>

@@ -1,5 +1,6 @@
 "use client"
 
+import Advertisement from "./Advertisement"
 import Image from "next/image"
 import { Game } from "@/lib/types"
 import { ReactNode } from "react"
@@ -20,12 +21,22 @@ export default function GameList({
 }: GameListProps) {
   const router = useRouter()
 
+  /* 2. 修改 renderAdSlot 函数
   const renderAdSlot = (index: number) => (
-    <div 
-      key={`ad-${index}`} 
-      className="col-span-2 h-[120px] bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 my-2"
-    >
-      Ad Slot {index + 1}
+    <div key={`ad-${index}`} className="col-span-2 my-2">
+      <Advertisement position="content" index={index} />
+    </div>
+  )*/
+
+  const renderAdSlot = (index: number) => (
+    <div key={`ad-${index}`} className="col-span-2 my-2">
+      {index === 0 ? (
+        <Advertisement position="content" index={index} />
+      ) : (
+        <div className="h-[20px] bg-gray-800 rounded-lg flex items-center justify-center text-gray-400">
+           --------------{index + 1}--------------
+        </div>
+      )}
     </div>
   )
 
