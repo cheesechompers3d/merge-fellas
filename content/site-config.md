@@ -3,7 +3,7 @@ defaultGame: "merge-fellas"
 siteName: "Merge Fellas"
 footer:
   columns:
-    - title: "Games"
+    - title: "Merge Fellas Games"
       description: ""
       links:
         - text: "More Games"
@@ -17,9 +17,13 @@ footer:
     - title: "Quick Links"
       links:
         - text: "GitHub"
-          url: "https://github.com/merge-fellas/merge-fellas"
-        - text: "Merge Fellas Official"
-          url: "https://mergefellas.pro"
+          url: "https://github.com/cheesechompers3d/mergefellas"
+        - text: "Cheese Chompers 3D"
+          url: "https://www.cheese-chompers-3d.com"
+        - text: "Brainrot Clicker"
+          url: "https://www.brainrotclicker.pro"
+        - text: "Squidki"
+          url: "https://www.squidki.pro"
     - title: "Contact Us"
       links:
         - text: "HarryC199101@gmail.com"
