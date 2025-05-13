@@ -21,15 +21,8 @@ export default function GameList({
 }: GameListProps) {
   const router = useRouter()
 
-  /* 2. 修改 renderAdSlot 函数
   const renderAdSlot = (index: number) => (
-    <div key={`ad-${index}`} className="col-span-2 my-2">
-      <Advertisement position="content" index={index} />
-    </div>
-  )*/
-
-  const renderAdSlot = (index: number) => (
-    <div key={`ad-${index}`} className="col-span-2 my-2">
+    <div key={`ad-${index}`} className="col-span-full my-2">
       {index === 0 ? (
         <Advertisement position="content" index={index} />
       ) : (
@@ -42,9 +35,7 @@ export default function GameList({
 
   const handleGameClick = (slug: string) => {
     onGameSelect(slug)
-    // 更新 URL
     router.push(`/${slug}`)
-    // 使用平滑滚动到游戏 iframe 区域
     const gameFrame = document.getElementById('game-frame')
     if (gameFrame) {
       gameFrame.scrollIntoView({ behavior: 'smooth' })
@@ -76,16 +67,16 @@ export default function GameList({
         </div>
       )
 
-      // 每4个游戏（2行）后添加广告位
-      if ((index + 1) % 4 === 0) {
-        items.push(renderAdSlot(Math.floor(index / 4)))
+      // 每6个游戏（3行）后添加广告位
+      if ((index + 1) % 6 === 0) {
+        items.push(renderAdSlot(Math.floor(index / 6)))
       }
     })
     return items
   }
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4">
       {renderGameItems()}
     </div>
   )

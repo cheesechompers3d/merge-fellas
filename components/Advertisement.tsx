@@ -59,10 +59,14 @@ export default function Advertisement({ position, index = 0 }: AdvertisementProp
   }, [index])
 
   return (
-    <div className={`ad-container ${position === 'sidebar' ? 'h-[600px]' : 'h-[250px]'} flex items-center justify-center`}>
+    <div className={`ad-container ${
+      position === 'sidebar' 
+        ? 'h-[600px] w-full lg:w-auto' 
+        : 'h-[250px]'
+    } flex items-center justify-center mx-auto`}>
       <div 
         id={`container-7286a191663e326556b5be5408f8b07a-${index}`}
-        className="w-[300px] h-[250px] bg-gray-100 rounded-lg"
+        className="w-[300px] h-[250px] bg-gray-100 rounded-lg shadow-sm"
       />
     </div>
   )
