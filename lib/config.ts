@@ -6,9 +6,9 @@ export const defaultConfig: SiteConfig = {
   siteName: "Merge Fellas",
   seo: {
     title: "Merge Fellas - Play Free Online Meme Clicker Game",
-    description: "Play Merge Fellas, the ultimate meme-based clicker game!",
+    description: "Play Merge Fellas, a fun meme-based clicker game where you merge cute characters to create powerful combinations. Compete with friends and discover rare items!",
     ogImage: "/images/hot_game/merge-fellas.jpg",
-    keywords: "Merge Fellas, meme game, clicker game"
+    keywords: "merge fellas, online merge game, meme clicker, idle merge, character collection, free browser game"
   },
   advertisement: {
     key: ""

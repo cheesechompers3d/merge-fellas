@@ -3,8 +3,8 @@ import { defaultConfig } from "@/lib/config"
 import ClientPage from "@/components/ClientPage"
 
 export const metadata: Metadata = {
-  title: defaultConfig.siteName,
-  description: `Play ${defaultConfig.siteName} - The Ultimate Gaming Experience`
+  title: defaultConfig.seo.title,
+  description: defaultConfig.seo.description,
 }
 
 export default function Page() {

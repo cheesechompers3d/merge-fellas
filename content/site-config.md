@@ -2,10 +2,10 @@
 defaultGame: "merge-fellas"
 siteName: "Merge Fellas"
 seo:
-  title: "Merge Fellas - Play Free Online Meme Clicker Game | Italian Brainrot"
-  description: "Play Merge Fellas, the ultimate meme-based clicker game featuring Italian Brainrot characters! Click, upgrade, and unlock hilarious memes. Free online game, no download required."
-  ogImage: "/images/hot_game/brainrotclicker.jpg"
-  keywords: "Merge Fellas, italian Merge Fellas, meme game, clicker game, online game"
+  title: "Merge Fellas - Play Free Online Meme Clicker Game"
+  description: "Play Merge Fellas, a fun meme-based clicker game where you merge cute characters to create powerful combinations. Compete with friends and discover rare items!"
+  ogImage: "/images/hot_game/merge-fellas.jpg"
+  keywords: "merge fellas, online merge game, meme clicker, idle merge, character collection, free browser game"
 
 siteInfo:
   companyName: "Merge Fellas"
