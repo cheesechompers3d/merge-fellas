@@ -63,4 +63,6 @@ faq:
     - question: "How many players per race?"
       answer: "Each race can support up to 8 players, creating exciting and competitive matches."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Smash Karts features colorful graphics and family-friendly gameplay suitable for all ages." 
+      answer: "Absolutely! Smash Karts features colorful graphics and family-friendly gameplay suitable for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Smash Karts in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Smash Karts and will respond to your inquiry promptly." 

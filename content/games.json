@@ -4,9 +4,9 @@
       "slug": "merge-fellas",
       "title": "Merge Fellas",
       "description": "Experience Merge Fellas, an addictive merging game where you combine identical characters to create more powerful ones. Discover the unique merging mechanics of Merge Fellas and enjoy endless fun!",
-      "icon": "/images/hot_game/merge-fellas.jpg",
+      "icon": "/images/hot_game/merge-fellas.png",
       "url": "https://merge-fellas.com/game",
-      "previewImage": "/images/hot_game/merge-fellas.jpg",
+      "previewImage": "/images/hot_game/merge-fellas.png",
       "type": "puzzle"
     },
     {
@@ -18,6 +18,16 @@
       "previewImage": "/images/hot_game/brainrotclicker.jpg",
       "type": "action"
     },
+    {
+      "slug": "wacky-flip",
+      "title": "Wacky Flip",
+      "description": "Experience Wacky Flip, an exciting arcade-style game that challenges your reflexes and timing. Guide colorful characters through a series of increasingly challenging levels, flipping and jumping to collect points and avoid obstacles.",
+      "icon": "/images/hot_game/wacky-flip.png",
+      "url": "https://1games.io/embed/wacky-flip",
+      "previewImage": "/images/hot_game/wacky-flip.png",
+      "type": "arcade"
+    },
+       
     {
       "slug": "cheese-chompers-3d",
       "title": "Cheese Chompers 3D",
@@ -166,19 +176,37 @@
       "slug": "sprunki-spruted-remastered",
       "title": "Sprunki Spruted Remastered",
       "description": "A remastered version of the classic game with enhanced graphics and gameplay.",
-      "icon": "/images/new_mods/Sprunki Spruted Remastered.png",
+      "icon": "/images/hot_game/Sprunki-Spruted-Remastered.png",
       "url": "https://wowtbc.net/sprunkin/spruted-remastered/index.html",
-      "previewImage": "/images/new_mods/Sprunki Spruted Remastered.png",
+      "previewImage": "/images/new_mods/Sprunki-Spruted-Remastered.png",
       "type": "action"
     },
     {
       "slug": "sprunki-skibidi-toilet-remake",
       "title": "Sprunki Skibidi Toilet Remake 4.5",
       "description": "An entertaining remake with unique gameplay mechanics and challenges.",
-      "icon": "/images/new_mods/Sprunki Skibidi Toilet Remake 4.5.png",
+      "icon": "/images/hot_game/Sprunki-Skibidi-Toilet-Remake-4.5.png",
       "url": "https://wowtbc.net/sprunkin/skibidi-toilet4.5/index.html",
-      "previewImage": "/images/new_mods/Sprunki Skibidi Toilet Remake 4.5.png",
+      "previewImage": "/images/new_mods/Sprunki-Skibidi-Toilet-Remake-4.5.png",
       "type": "action"
+    },
+    {
+      "slug": "2048-italian-brainrot",
+      "title": "2048 Italian Brainrot",
+      "description": "Experience 2048 Italian Brainrot, a unique twist on the classic 2048 puzzle game with an Italian theme. Combine numbers, unlock special Italian-themed tiles, and challenge your brain with this addictive puzzle adventure!",
+      "icon": "/images/hot_game/2048 Italian Brainrot.png",
+      "url": "https://2048italianbrainrot.itch.io/2048-italian-brainrot",
+      "previewImage": "/images/hot_game/2048 Italian Brainrot.png",
+      "type": "puzzle"
+    },
+    {
+      "slug": "italian-brainrot-clicker-2",
+      "title": "Italian Brainrot Clicker 2",
+      "description": "Experience Italian Brainrot Clicker 2, the highly anticipated sequel that takes meme clicking to the next level! Featuring new Italian Brainrot characters, enhanced clicking mechanics, and an expanded meme universe.",
+      "icon": "/images/hot_game/Italian Brainrot Clicker 2.png",
+      "url": "https://1games.io/game/italian-brainrot-clicker-2",
+      "previewImage": "/images/hot_game/Italian Brainrot Clicker 2.png",
+      "type": "clicker"
     }
   ]
 } 

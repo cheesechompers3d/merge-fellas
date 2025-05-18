@@ -63,4 +63,6 @@ faq:
     - question: "How often is the game updated?"
       answer: "We regularly update Crazy Kitty 3D with new content, cat breeds, and improvements based on player feedback."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Crazy Kitty 3D is designed to be family-friendly with its cute cats and intuitive controls." 
+      answer: "Absolutely! Crazy Kitty 3D is designed to be family-friendly with its cute cats and intuitive controls."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Crazy Kitty 3D in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Crazy Kitty 3D and will respond to your inquiry promptly." 

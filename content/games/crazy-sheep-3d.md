@@ -64,4 +64,6 @@ faq:
     - question: "How does the level editor work?"
       answer: "The intuitive level editor allows you to create your own challenges using a variety of obstacles, power-ups, and environmental elements. Once created, you can share your levels with the global community and play levels created by other players."
     - question: "How often does the game receive updates?"
-      answer: "We regularly update Crazy Sheep 3D with new content, including additional characters, levels, power-ups, and features based on community feedback and suggestions." 
+      answer: "We regularly update Crazy Sheep 3D with new content, including additional characters, levels, power-ups, and features based on community feedback and suggestions."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Crazy Sheep 3D in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Crazy Sheep 3D and will respond to your inquiry promptly." 

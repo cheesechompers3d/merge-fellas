@@ -18,6 +18,7 @@ whyPlay:
     - "Fast-Paced Action: Experience thrilling battles with quick building mechanics"
     - "Regular Updates: Enjoy new weapons, building pieces, and features through frequent updates"
     - "Competitive Play: Test your skills against players worldwide in various game modes"
+    - "Community Events: Participate in special tournaments and events with exclusive rewards"
 
 features:
   title: "Key Features of Build Royale"
@@ -63,4 +64,6 @@ faq:
     - question: "How many players per match?"
       answer: "Each match supports up to 100 players, creating intense large-scale battles."
     - question: "Is this game suitable for children?"
-      answer: "Yes! Build Royale features cartoon-style graphics and family-friendly gameplay suitable for all ages." 
+      answer: "Yes! Build Royale features cartoon-style graphics and family-friendly gameplay suitable for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Build Royale in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Build Royale and will respond to your inquiry promptly." 

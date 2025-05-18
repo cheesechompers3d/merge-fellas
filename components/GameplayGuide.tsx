@@ -1,5 +1,7 @@
 "use client"
 
+import { useState } from "react"
+import { cn } from "@/lib/utils"
 import { HowToPlayStep } from "@/lib/types"
 
 interface GameplayGuideProps {
@@ -14,50 +16,51 @@ export default function GameplayGuide({ intro, steps, videoUrls }: GameplayGuide
   }
 
   return (
-    <div className="bg-gray-900 rounded-lg p-6">
-      <h2 className="text-2xl font-bold mb-6 text-white">How to Play</h2>
-      
-      {videoUrls && videoUrls.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {videoUrls.map((url, index) => (
-            <div key={index} className="aspect-video w-full">
-              <iframe
-                src={`${url}?autoplay=0&rel=0&showinfo=0&modestbranding=1`}
-                className="w-full h-full rounded-lg"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-                title="Game Tutorial Video"
-              />
-            </div>
-          ))}
-        </div>
-      )}
-      
-      {intro && (
-        <p className="text-gray-300 mb-8 leading-relaxed">
+    <div className="space-y-8">
+      <div className="text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">How to Play</h2>
+        <p className="text-gray-600 dark:text-gray-400 max-w-8xl mx-auto">
           {intro}
         </p>
-      )}
-      
-      {steps && steps.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 rounded-lg p-6 flex flex-col gap-4"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                  {index + 1}
-                </div>
-                <h3 className="text-lg font-semibold text-white">{step.title}</h3>
-              </div>
-              <p className="text-gray-300 leading-relaxed">
-                {step.description}
-              </p>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {steps && steps.length > 0 && steps.map((step, index) => (
+          <div 
+            key={index}
+            className="relative bg-gray-900 p-6 rounded-lg border border-gray-800 hover:border-purple-500 transition-colors"
+          >
+            {/* 序号圆形背景 */}
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-semibold border-2 border-gray-900">
+              {index + 1}
             </div>
-          ))}
+            <h3 className="text-lg font-semibold mb-3 text-white mt-2">
+              {step.title}
+            </h3>
+            <p className="text-gray-400">
+              {step.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {videoUrls && videoUrls.length > 0 && (
+        <div className="mt-12">
+          <h3 className="text-xl font-semibold mb-6 text-center">Tutorial Videos</h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            {videoUrls.map((url, index) => (
+              <div key={index} className="aspect-video">
+                <iframe
+                  src={`${url}?autoplay=0&rel=0&showinfo=0&modestbranding=1`}
+                  className="w-full h-full rounded-lg"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  title="Game Tutorial Video"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>

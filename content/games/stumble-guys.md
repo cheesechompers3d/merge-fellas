@@ -18,6 +18,7 @@ whyPlay:
     - "Quick Matches: Jump into fast-paced rounds perfect for short gaming sessions"
     - "Regular Updates: Enjoy new levels, costumes, and features through frequent updates"
     - "Competitive Spirit: Compete against players worldwide to become the ultimate champion"
+    - "Seasonal Events: Participate in special themed events with unique rewards and challenges"
 
 features:
   title: "Key Features of Stumble Guys"
@@ -63,4 +64,6 @@ faq:
     - question: "How long do matches last?"
       answer: "Matches typically last 10-15 minutes, with multiple rounds of increasing difficulty."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Stumble Guys features colorful graphics and family-friendly gameplay suitable for all ages." 
+      answer: "Absolutely! Stumble Guys features colorful graphics and family-friendly gameplay suitable for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Stumble Guys in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Stumble Guys and will respond to your inquiry promptly." 

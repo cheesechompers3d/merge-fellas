@@ -19,13 +19,11 @@ export default function GameListWrapper({ games, currentGame }: GameListWrapperP
   }
 
   return (
-    <div className="w-full">
-      <GameList
-        games={games}
-        currentGame={currentGame}
-        onGameSelect={handleGameSelect}
-        isDarkMode={isDarkMode}
-      />
-    </div>
+    <GameList
+      games={games}
+      currentGame={currentGame}
+      onGameSelect={handleGameSelect}
+      isDarkMode={isDarkMode}
+    />
   )
 } 

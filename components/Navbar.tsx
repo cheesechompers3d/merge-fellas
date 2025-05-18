@@ -5,13 +5,17 @@ import Image from "next/image"
 import { useRouter, usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import { cn } from "@/lib/utils"
 
 interface NavbarProps {
   onGameSelect?: (gameName: string) => void
   onToggleTheme: () => void
   isDarkMode: boolean
   currentGameTitle?: string
+  isMobile?: boolean
+  onShowGameList?: () => void
+  onNavigateHome?: () => void
 }
 
 const navItems = [
@@ -23,14 +27,22 @@ const navItems = [
   { name: "FAQ", id: "faq" }
 ]
 
-export default function Navbar({ onGameSelect, onToggleTheme, isDarkMode, currentGameTitle }: NavbarProps) {
+export default function Navbar({ 
+  onGameSelect, 
+  onToggleTheme, 
+  isDarkMode, 
+  currentGameTitle,
+  isMobile,
+  onShowGameList,
+  onNavigateHome
+}: NavbarProps) {
   const router = useRouter()
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [siteName, setSiteName] = useState("Loading...")
 
   useEffect(() => {
-    // 从 API 加载配置
+    // Load config from API
     fetch('/api/config')
       .then(res => res.json())
       .then(data => {
@@ -41,46 +53,36 @@ export default function Navbar({ onGameSelect, onToggleTheme, isDarkMode, curren
       })
   }, [])
 
-  const scrollToElement = (element: HTMLElement) => {
-    const navbar = document.querySelector('nav')
-    const navbarHeight = navbar ? navbar.offsetHeight : 0
-    const rect = element.getBoundingClientRect()
-    const scrollPosition = window.pageYOffset + rect.top - navbarHeight - 20
-
-    window.scrollTo({
-      top: scrollPosition,
-      behavior: 'smooth'
-    })
-  }
-
   const handleScroll = (id: string) => {
-    // 如果在 More Games 页面,先跳转到主页
+    // If on More Games page, redirect to home first
     if (pathname === '/more-games') {
       router.push('/')
       return
     }
     
-    // 关闭移动端菜单
+    const element = document.getElementById(id)
+    if (element) {
+      const offset = element.offsetTop - 80 // Account for navbar height
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth"
+      })
+    }
     setIsMenuOpen(false)
-
-    // 等待菜单关闭动画完成和 DOM 更新
-    setTimeout(() => {
-      const element = document.getElementById(id)
-      if (element) {
-        scrollToElement(element)
-      }
-    }, 300) // 增加延迟时间以确保动画完成
   }
 
   const handleLogoClick = () => {
-    router.push('/')
+    if (onNavigateHome) {
+      onNavigateHome()
+    } else {
+      router.push('/')
+    }
   }
 
   return (
-    <nav className="bg-gray-800 sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        {/* 主导航栏 */}
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-gray-800 p-4 sticky top-0 z-50">
+      <div className="container mx-auto">
+        <div className="flex justify-between items-center">
           {/* Logo */}
           <button onClick={handleLogoClick} className="flex items-center space-x-2">
             <Image
@@ -90,78 +92,105 @@ export default function Navbar({ onGameSelect, onToggleTheme, isDarkMode, curren
               height={40}
               className="rounded-full"
             />
-            <span className="text-xl md:text-2xl font-bold text-white">
+            <span className="text-2xl font-bold text-white">
               {siteName}
             </span>
           </button>
 
-          {/* 桌面端导航 */}
-          <div className="hidden md:flex items-center space-x-6">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => handleScroll(item.id)}
-                className="text-white hover:text-purple-400 transition-colors text-sm"
-              >
-                {item.name}
-              </button>
-            ))}
-            <Link
-              href="/more-games"
-              className="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 text-white text-sm"
-            >
-              More Games
-            </Link>
-            <button
-              onClick={onToggleTheme}
-              className="bg-gray-700 p-2 rounded-lg text-white"
-              aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
-            >
-              <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
-            </button>
-          </div>
-
-          {/* 移动端菜单按钮 */}
-          <div className="flex md:hidden">
-            <button
-              className="text-white p-2 w-10 h-10 flex items-center justify-center"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} className="w-6 h-6" />
-            </button>
-          </div>
-        </div>
-
-        {/* 移动端下拉菜单 */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-700">
-            <div className="flex flex-col space-y-3">
+          {/* Right side navigation and buttons */}
+          <div className="flex items-center space-x-6">
+            {/* Navigation links - desktop only */}
+            <div className="hidden md:flex items-center space-x-6">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => handleScroll(item.id)}
-                  className="text-white hover:text-purple-400 transition-colors text-sm py-2 px-4 rounded-lg hover:bg-gray-700 text-left"
+                  className="text-white hover:text-purple-400 transition-colors text-sm"
                 >
                   {item.name}
                 </button>
               ))}
+            </div>
+
+            {/* More Games button - desktop only */}
+            <Link
+              href="/more-games"
+              className="hidden md:block bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 text-white text-sm"
+            >
+              More Games
+            </Link>
+
+            {/* Theme toggle button - desktop only */}
+            <button
+              onClick={onToggleTheme}
+              className="hidden md:block bg-gray-700 p-2 rounded-lg text-white"
+              aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+            </button>
+
+            {/* Mobile menu button - always visible on mobile */}
+            <button
+              className="block md:hidden text-white"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {isMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile dropdown menu */}
+        {isMenuOpen && (
+          <div className="md:hidden fixed top-0 right-0 w-64 h-screen bg-gray-900 shadow-lg z-50">
+            <div className="flex justify-end p-2 border-b border-gray-800">
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-400 hover:text-white p-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Menu items */}
+            <div className="p-4 space-y-2">
+              {/* Show navigation items */}
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleScroll(item.id)}
+                  className="block w-full text-left text-white hover:text-purple-400 transition-colors py-2"
+                >
+                  {item.name}
+                </button>
+              ))}
+              
+              {/* More Games button - always visible */}
               <Link
                 href="/more-games"
-                className="text-white hover:text-purple-400 transition-colors text-sm py-2 px-4 rounded-lg hover:bg-gray-700 flex items-center"
+                className="block w-full text-center text-white bg-purple-600 hover:bg-purple-700 transition-colors rounded-lg py-3 mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 More Games
               </Link>
+              
+              {/* Theme toggle button - always visible */}
               <button
                 onClick={() => {
-                  onToggleTheme();
-                  setIsMenuOpen(false);
+                  onToggleTheme()
+                  setIsMenuOpen(false)
                 }}
-                className="text-white hover:text-purple-400 transition-colors text-sm py-2 px-4 rounded-lg hover:bg-gray-700 flex items-center space-x-2 w-full text-left"
+                className="block w-full text-center text-white bg-gray-800 hover:bg-gray-700 transition-colors rounded-lg py-3 mt-2"
               >
-                <span>{isDarkMode ? "Light Mode" : "Dark Mode"}</span>
-                <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+                {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
               </button>
             </div>
           </div>

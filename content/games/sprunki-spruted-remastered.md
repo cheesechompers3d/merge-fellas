@@ -63,6 +63,8 @@ faq:
       answer: "We regularly release updates with new content, features, and improvements."
     - question: "Is this game suitable for children?"
       answer: "Yes, Sprunki Spruted Remastered is family-friendly and suitable for players of all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Sprunki Spruted Remastered in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Sprunki Spruted Remastered and will respond to your inquiry promptly."
 ---
 
 # Sprunki Spruted Remastered

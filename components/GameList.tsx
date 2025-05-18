@@ -1,10 +1,10 @@
 "use client"
 
-import Advertisement from "./Advertisement"
 import Image from "next/image"
 import { Game } from "@/lib/types"
 import { ReactNode } from "react"
 import { useRouter } from "next/navigation"
+import Advertisement from './Advertisement'
 
 interface GameListProps {
   games?: Game[]
@@ -22,20 +22,19 @@ export default function GameList({
   const router = useRouter()
 
   const renderAdSlot = (index: number) => (
-    <div key={`ad-${index}`} className="col-span-full my-2">
-      {index === 0 ? (
-        <Advertisement position="content" index={index} />
-      ) : (
-        <div className="h-[20px] bg-gray-800 rounded-lg flex items-center justify-center text-gray-400">
-           --------------{index + 1}--------------
-        </div>
-      )}
+    <div 
+      key={`ad-${index}`} 
+      className="col-span-2 flex items-center justify-center my-2"
+    >
+      <Advertisement position="content" isAdSlot={true} index={index} />
     </div>
   )
 
   const handleGameClick = (slug: string) => {
     onGameSelect(slug)
+    // 更新 URL
     router.push(`/${slug}`)
+    // 使用平滑滚动到游戏 iframe 区域
     const gameFrame = document.getElementById('game-frame')
     if (gameFrame) {
       gameFrame.scrollIntoView({ behavior: 'smooth' })
@@ -67,16 +66,16 @@ export default function GameList({
         </div>
       )
 
-      // 每6个游戏（3行）后添加广告位
-      if ((index + 1) % 6 === 0) {
-        items.push(renderAdSlot(Math.floor(index / 6)))
+      // 每4个游戏（2行）后添加广告位
+      if ((index + 1) % 4 === 0) {
+        items.push(renderAdSlot(Math.floor(index / 4)))
       }
     })
     return items
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-4">
       {renderGameItems()}
     </div>
   )

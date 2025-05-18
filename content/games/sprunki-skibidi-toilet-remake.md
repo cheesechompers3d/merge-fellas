@@ -63,4 +63,6 @@ faq:
     - question: "Are there in-game purchases?"
       answer: "The game is free to play with optional cosmetic purchases for character skins and accessories."
     - question: "Is this game suitable for children?"
-      answer: "Yes! Despite the quirky theme, the game maintains family-friendly content and humor suitable for all ages." 
+      answer: "Yes! Despite the quirky theme, the game maintains family-friendly content and humor suitable for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Sprunki Skibidi Toilet Remake in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Sprunki Skibidi Toilet Remake and will respond to your inquiry promptly." 

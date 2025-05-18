@@ -18,6 +18,7 @@ whyPlay:
     - "Auto-Battle System: Focus on strategy while watching your team battle automatically"
     - "Regular Updates: Experience new pets, abilities, and features through frequent updates"
     - "Competitive Play: Test your strategies against other players worldwide"
+    - "Custom Tournaments: Create and join custom tournaments with unique rules and pet pools"
 
 features:
   title: "Key Features of Super Auto Pets"
@@ -63,4 +64,6 @@ faq:
     - question: "How often are new pets added?"
       answer: "We regularly update the game with new pets, abilities, and balance changes to keep the meta fresh and exciting."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Super Auto Pets features cute animals and strategic gameplay that's appropriate for all ages." 
+      answer: "Absolutely! Super Auto Pets features cute animals and strategic gameplay that's appropriate for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Super Auto Pets in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Super Auto Pets and will respond to your inquiry promptly." 

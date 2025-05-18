@@ -52,17 +52,7 @@ export default function FAQ({ faq }: FAQProps) {
           </div>
         ))}
       </div>
-      <div className="mt-8 p-6 bg-gray-800/50 rounded-lg">
-        <h3 className="text-lg font-semibold mb-3 text-white">
-          Still Have Questions?
-        </h3>
-        <p className="text-white leading-relaxed">
-          If you can't find the answer to your question about Cheese Chompers 3D in our FAQ, 
-          please reach out to our community support team. Our dedicated staff is passionate about 
-          ensuring every player has the best possible experience with Cheese Chompers 3D and will 
-          respond to your inquiry promptly.
-        </p>
-      </div>
+
     </div>
   )
 }

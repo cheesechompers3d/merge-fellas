@@ -1,33 +1,41 @@
 ---
 defaultGame: "merge-fellas"
 siteName: "Merge Fellas"
+seo:
+  title: "Merge Fellas - Play Free Online Meme Clicker Game | Italian Brainrot"
+  description: "Play Merge Fellas, the ultimate meme-based clicker game featuring Italian Brainrot characters! Click, upgrade, and unlock hilarious memes. Free online game, no download required."
+  ogImage: "/images/hot_game/brainrotclicker.jpg"
+  keywords: "Merge Fellas, italian Merge Fellas, meme game, clicker game, online game"
+
+siteInfo:
+  companyName: "Merge Fellas"
+  siteUrl: "https://www.mergefellas.pro"
+  email: "HarryC199101@gmail.com"
 footer:
   columns:
-    - title: "Merge Fellas Games"
+    - title: "Games"
       description: ""
       links:
         - text: "More Games"
           url: "/more-games"
-        - text: "Crazy Chicken 3D"
-          url: "/crazy-chicken-3d"
-        - text: "Crazy Kitty 3D"
-          url: "/crazy-kitty-3d"
-        - text: "Brainrot Clicker"
-          url: "/brainrotclicker"
+        - text: "Cheese Chompers 3D"
+          url: "https://www.cheese-chompers-3d.com"
+        - text: "Squidki"
+          url: "https://www.squidki.pro"
     - title: "Quick Links"
       links:
         - text: "GitHub"
-          url: "https://github.com/cheesechompers3d/mergefellas"
-        - text: "Cheese Chompers 3D"
-          url: "https://www.cheese-chompers-3d.com"
-        - text: "Brainrot Clicker"
-          url: "https://www.brainrotclicker.pro"
-        - text: "Squidki"
-          url: "https://www.squidki.pro"
-    - title: "Contact Us"
+          url: "https://github.com/brainrotclicker/brainrotclicker"
+        - text: "Privacy Policy"
+          url: "/privacy-policy"
+        - text: "Terms of Service"
+          url: "/terms-of-service"
+    - title: "About/Contact"
       links:
-        - text: "HarryC199101@gmail.com"
-          url: "mailto:HarryC199101@gmail.com"
+        - text: "About Us"
+          url: "/about-us"
+        - text: "Contact Us"
+          url: "/contact-us"
   copyright: "© 2025 All rights reserved."
   disclaimer: "This is an independent website and is not affiliated with any organizations."
 --- 

@@ -63,4 +63,6 @@ faq:
     - question: "How often is the game updated?"
       answer: "We regularly update Crazy Chicken 3D with new content, bug fixes, and improvements based on player feedback."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Crazy Chicken 3D is designed to be family-friendly with its cute characters and intuitive controls." 
+      answer: "Absolutely! Crazy Chicken 3D is designed to be family-friendly with its cute characters and intuitive controls."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Crazy Chicken 3D in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Crazy Chicken 3D and will respond to your inquiry promptly." 

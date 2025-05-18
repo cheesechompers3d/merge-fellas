@@ -18,6 +18,7 @@ whyPlay:
     - "Strategic Depth: Plan your army composition and tactics to overcome challenging scenarios"
     - "Endless Possibilities: Create countless battle combinations with different units and environments"
     - "Regular Updates: Enjoy new content, units, and features through frequent game updates"
+    - "Workshop Support: Access and share community-created content, maps, and battle scenarios"
 
 features:
   title: "Key Features of Totally Accurate Battle Simulator"
@@ -63,4 +64,6 @@ faq:
     - question: "How many units can I use?"
       answer: "The number of units you can deploy depends on the battle size and your available points, but you can create massive battles with dozens of units."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! TABS features cartoonish graphics and physics-based humor that's perfect for all ages." 
+      answer: "Absolutely! TABS features cartoonish graphics and physics-based humor that's perfect for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Totally Accurate Battle Simulator in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Totally Accurate Battle Simulator and will respond to your inquiry promptly." 

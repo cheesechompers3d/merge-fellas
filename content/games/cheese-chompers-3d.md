@@ -18,6 +18,7 @@ whyPlay:
     - "Strategic Depth: Master the art of cheese collection while planning your routes and utilizing power-ups to achieve the highest scores in Cheese Chompers 3D"
     - "Regular Updates: Experience new content and improvements with frequent game updates that keep the gameplay fresh and exciting"
     - "Community Features: Join the growing Cheese Chompers 3D community, connect with other players through leaderboards and share your achievements"
+    - "Achievement System: Unlock special badges and rewards by completing challenging maze objectives"
 
 features:
   title: "Key Features of Cheese Chompers 3D"
@@ -63,4 +64,6 @@ faq:
     - question: "How often is the game updated?"
       answer: "We regularly update Cheese Chompers 3D with new content, bug fixes, and improvements based on player feedback."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Cheese Chompers 3D is designed to be family-friendly with its cute characters, non-violent gameplay, and intuitive controls." 
+      answer: "Absolutely! Cheese Chompers 3D is designed to be family-friendly with its cute characters, non-violent gameplay, and intuitive controls."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Cheese Chompers 3D in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Cheese Chompers 3D and will respond to your inquiry promptly." 

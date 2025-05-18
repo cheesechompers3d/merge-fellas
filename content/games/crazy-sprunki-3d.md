@@ -63,4 +63,6 @@ faq:
     - question: "Are there different game modes?"
       answer: "Yes! You can enjoy story mode, challenge mode, and special event modes."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Crazy Sprunki 3D is designed to be family-friendly and enjoyable for players of all ages." 
+      answer: "Absolutely! Crazy Sprunki 3D is designed to be family-friendly and enjoyable for players of all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Crazy Sprunki 3D in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Crazy Sprunki 3D and will respond to your inquiry promptly." 

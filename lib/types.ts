@@ -52,4 +52,36 @@ export interface Game {
   characteristics?: GameFeature // 游戏特点
   whyPlay?: GameFeature // 为什么要玩
   faq?: FAQSection // 常见问题
-} 
+}
+
+export interface SiteConfig {
+  defaultGame: string
+  siteName: string
+  seo: {
+    title: string
+    description: string
+    ogImage: string
+    keywords: string
+  }
+  advertisement: {
+    key: string
+  }
+  siteInfo: {
+    companyName: string
+    siteUrl: string
+    email: string
+  }
+  footer: {
+    columns: Array<{
+      title: string
+      description?: string
+      links: Array<{
+        text: string
+        url: string
+      }>
+    }>
+    copyright: string
+    disclaimer: string
+  }
+}
+

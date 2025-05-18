@@ -63,4 +63,6 @@ faq:
     - question: "How many players can play together?"
       answer: "Party Animals supports up to 8 players in online matches and 4 players in local multiplayer mode."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! Party Animals features cute characters and non-violent gameplay suitable for all ages." 
+      answer: "Absolutely! Party Animals features cute characters and non-violent gameplay suitable for all ages."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Party Animals in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Party Animals and will respond to your inquiry promptly." 

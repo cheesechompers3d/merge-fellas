@@ -1,13 +1,11 @@
 import type React from "react"
 import "./globals.css"
-import type { Metadata } from "next"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
+import { ThemeProvider } from '@/components/theme-provider'
+import CanonicalUrl from '@/components/Metadata'
+import { metadata } from './metadata'
 
-export const metadata: Metadata = {
-  title: 'Merge Fellas',
-  description: "Experience Merge Fellas, an addictive merging game where you combine identical characters to create more powerful ones. With its unique merging mechanics and endless possibilities, Merge Fellas offers a perfect blend of strategy and fun!",
-  generator: 'v0.dev'
-}
+export { metadata }
 
 export default function RootLayout({
   children,
@@ -15,13 +13,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="font-sans bg-gray-900 text-white">
-        <GoogleAnalytics />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-sans">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <CanonicalUrl />
+          <GoogleAnalytics />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
 }
-
-import './globals.css'

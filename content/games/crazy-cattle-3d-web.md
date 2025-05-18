@@ -52,7 +52,7 @@ howToPlaySteps:
     description: "Discover special features and optimizations for web-based gameplay."
 
 faq:
-  title: "Frequently Asked Questions about Crazy Cattle 3D Web Port"
+  title: "Frequently Asked Questions about Crazy Cattle 3D Web"
   items:
     - question: "What makes the Web Port version special?"
       answer: "Crazy Cattle 3D Web Port is optimized for browser-based play, offering instant access without downloads and cross-device compatibility."
@@ -63,4 +63,6 @@ faq:
     - question: "Do I need to install anything?"
       answer: "No, Crazy Cattle 3D Web Port runs directly in your browser without any installations required."
     - question: "Is this game suitable for children?"
-      answer: "Absolutely! The Web Port maintains the family-friendly nature of Crazy Cattle 3D while being easily accessible." 
+      answer: "Absolutely! The Web Port maintains the family-friendly nature of Crazy Cattle 3D while being easily accessible."
+    - question: "Still Have Questions?"
+      answer: "If you can't find the answer to your question about Crazy Cattle 3D Web in our FAQ, please reach out to our community support team. Our dedicated staff is passionate about ensuring every player has the best possible experience with Crazy Cattle 3D Web and will respond to your inquiry promptly." 
